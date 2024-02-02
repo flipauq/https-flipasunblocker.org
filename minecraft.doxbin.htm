@@ -1,0 +1,243 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon/32.png"/>
+        <link rel="icon" type="image/png" sizes="48x48" href="/static/favicon/48.png"/>
+        <link rel="icon" type="image/png" sizes="96x96" href="/static/favicon/96.png"/>
+        <link rel="icon" type="image/png" sizes="144x144" href="/static/favicon/144.png"/>
+
+
+        <link href="/static/styles/index.css" rel="stylesheet" type="text/css"/>
+        <link href="/static/styles/navbar.css" rel="stylesheet" type="text/css"/>
+        <script src="/static//scripts/jquery-3.6.0.min.js"></script>
+        <script src="/static//scripts/navbar.js"></script>
+        <script src="/static//scripts/global.js"></script>
+        <script src="/static/scripts/index.js"></script>
+
+        <title>Google Classroom</title>
+
+        <script>var footer = true; var search = true;</script>
+    </head>
+
+    <nav style="user-select: none;">
+        <!-- Warn the user if no javascript >:( -->
+        <noscript>
+            <object style="padding: 6px" data="/static/warning.svg" width="100" height="100"></object>
+            <h2>
+                <span style="color: red; font-family: sans-serif;">
+                    JAVASCRIPT NEEDS TO BE ENABLED FOR THIS WEBSITE TO WORK PROPERLY
+                </span><a href="https://www.enable-javascript.com/" style="font-family: sans-serif; color: #f53c52">https://www.enable-javascript.com/</a>
+            </h2>
+        </noscript>
+
+        <div class="navbar"><a href="/">Home</a></div>
+        <div class="navbar"><a href="/browser">Website Unblocker</a></div>
+        <div class="navbar"><a href="/chat">Chat room</a></div>
+        <div class="navbar" id="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Featured Games</a>
+
+      <div class="dropdown-content">
+          <a style="" href="/minecraft">Minecraft</a>
+        <a href="/amongus">Among Us</a>
+        <a href="/gartic">Gartic.io</a>
+        <a href="/sm64">Super Mario 64</a>
+        <a href="/papasscooperia">Papa's Scooperia</a>
+        <a href="/ballisticchickens">Ballistic Chickens</a>
+        <a href="/SuperAutoPets">Super Auto Pets</a>
+        <a href="/geometrydash">Geometry Dash</a>
+       </div>
+     </div>
+
+
+    <li class="navbar" id="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Other</a>
+      <div class="dropdown-content">
+          <a href="gcse">GCSE Papers</a>
+          <a href="https://repositories.freedombrowser.org">Repo</a>
+          <a href="https://stonklat.com">OpenBrowser</a>
+      </div>
+    </li>
+
+      <li class="navbar"><a href="minecraft">Minecraft</a></li>
+      <li class="navbar"><a href="allgames">All Links</a></li>
+          <li class="navbar" id="dropdown">
+   <!-- <a href="javascript:void(0)" class="dropbtn">Extras</a> -->
+
+      <div class="dropdown-content">
+          <div id="storageenabled">
+
+
+          </div>
+<script>
+    if (typeof(Storage) == "undefined") {
+        document.getElementById("storageenabled").innerHTML = " <h2 style='font-family:sans-serif'>Sorry, but your browser does not support this feature<h2> ";
+        let extras = false
+    } else {
+        let extras = true
+    }
+</script>
+
+       </div>
+     </li>
+    <li class="navbar" style="float: right;"><a href= "about">About</a></li>
+
+<style>
+  .search-container {
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    align-items: self-end;
+  }
+
+  /* Style for the search input */
+  .search-container input[type="text"] {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+    inline-size: 100%;
+    margin-inline-end: 10px;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .search-container input[type="text"]:focus {
+      width: 230%;
+  }
+
+.search-container button {
+    background-color: #9d9d9d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 19px;
+    }
+</style>
+
+  </nav>
+
+      
+<style>
+    @font-face {
+    font-family: 'Mojangles';
+    src: url('/static/assets/mojangles.woff') format('woff');
+    }
+
+    body {
+        background-image: url('/static/assets/mcbackground.png');
+        font-family: Mojangles, serif;
+        background-repeat: round; /* Repeats vertically as you scroll */
+        background-attachment: scroll; /* Keeps the background fixed while scrolling */
+        background-size: contain; /* Optional: Adjust image sizing as needed */
+
+
+
+    }
+
+    #play {
+        background-color: transparent;
+        border: none; /* Remove any borders */
+        outline: none; /* Remove the default focus outline (not recommended for accessibility) */
+        /* Optionally, you can remove padding and margin to make it as minimal as possible */
+        padding: 10px;
+        margin: 0;
+    }
+</style>
+<script>
+
+
+</script>
+<body>
+<h1 class="title">Minecraft</h1>
+    <p>
+         This is real Minecraft (1.8) compiled to javascript thanks to the TeaVM and Eaglercraft projects<br>
+        <u>You can Join the multiplayer server by either by pressing the play button and playing in your browser,<br>
+        or playing in the official (or cracked) Minecraft launcher
+        by going to the server <em>stonklat.com</em></u>
+    </p>
+
+    <div id="gamebox" style="text-align: center">
+        
+        <p style="font-size: 30px"><b>Minecraft is FINALLY working again! World Reset!</b></p>
+
+          <button id="play"><img src="/static/pressmetoplay.png" id="play-img" width="200" height="200"></button>
+          <p id="loading" style="font-size: 25px; display: none; color: #bda560">Minecraft is loading, please stand by...</p>
+        <br><br>
+        <b style="color: #bda560; font-size: 25px">NEW! </b><a id="singleplayeronly" href="http://mc.stonklat.com/lite.html" style="font-size: 20px;">Lite version (Makes Minecraft faster on chromebooks)</a>
+        <br><a id="singleplayeronly" href="/static/assets/gamebackend/minecraft/index.html">1.5.2 (Legacy Version, Singleplayer only)</a>
+        <br>
+
+    </div>
+    <div id="too-late" style="text-align: center; display: none">
+        <p style="font-size: 25px; color: #bda560">Minecraft is not available to play at the moment.
+        Please check back later.</p>
+    </div>
+    <br><br><hr><br><br>
+    <i style="font-size: 20px">Minecraft News:</i>
+    <ul style="list-style-type: none;">
+        <li>16/10/2023 - We have now added a new lite mode which makes Minecraft run better on chromebooks and other
+        underpowered devices.</li>
+        <li>14/09/2023 - After a long maintenance break Minecraft is BACK and better than ever! with an additional 4GB of RAM
+        you are sure to experience much less lag! The world has also been reset.</li>
+    </ul>
+
+<br><br><br><br><br>
+
+
+
+    <script>
+    footer = false;
+
+    $("#play").click(function() {
+            $("#play-img").hide()
+            $("#singleplayeronly").hide()
+            $("#loading").show()
+            window.location.href = "http://mc.stonklat.com"
+    });
+
+    /*
+    var currentHour = new Date().getHours();
+    if (currentHour >= 23 || currentHour <= 6) {
+        $("#too-late").show()
+    } else {
+        $("#gamebox").show()
+    }
+     */
+
+    </script>
+<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a9344bb358554eeca4fe1cc42998e218"}'></script><!-- Cloudflare Pages Analytics --></body>
+  <footer style="border: dashed;">
+      <p style="user-select: none; color: #000000; font-size: 16px; text-align: center;
+                                font-family: Mojangles,sans-serif !important;">Copyright of The_Maple_Tree and STONKLAT
+    </p>
+  </footer>
+
+  <footer id="freedomfooter" style="border: none; border-radius: 10px; inset-inline-start: 0; inset-block-end: 0; padding: 5px;">
+      <p class="footer" style="user-select: none; color: black; font-size: 16px; text-align: center">&copy; Copyright 2024 of The_Maple_Tree and STONKLAT
+    </p>
+  </footer>
+    <script>
+        if (footer === false) {
+            $('#freedomfooter').remove();
+        }
+        /*
+        // Search was removed :(
+        if (search === false) {
+            $('#search').remove();
+        } */
+    </script>
+</html> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    FLIPAS UNBLOCKED WEBSITE (school)
+</body>
+</html>
